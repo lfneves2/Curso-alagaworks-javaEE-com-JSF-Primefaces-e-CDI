@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.produto-tabela input{
+	width: 610px;	
+}
 
 body{
 	fon-sizet: 12px;
@@ -56,6 +59,10 @@ h1 {
 	width: 150px;
 }
 
+.campo {
+	width: 
+}
+
 .ui-panelgrid > td {
 	height: 30px;
 }
@@ -63,13 +70,30 @@ h1 {
 .ajax-status {
 	position: fixed;
 	top: 55px;
-	right: 10px;
+	right: 200px;
 	width: 35px;
 	height: 35px;
 }
 
+.ui-selectmanycheckbox td {
+	border-width: 0px !important;
+}
 
+.ui-tabs .ui-tabs-panel {
+	padding: 0.5em 0.2em !important;
+}
 
+.ui-tabs {
+	padding: 0px !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin: 1px !important;
+}
+
+.ui-tabs .ui-tabs-top > .ui-tabs-nav {
+	padding: 0px !important;
+}
 
 
 
