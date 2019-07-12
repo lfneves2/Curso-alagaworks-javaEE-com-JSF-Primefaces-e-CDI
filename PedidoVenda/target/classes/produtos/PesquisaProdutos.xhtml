@@ -34,7 +34,7 @@
 				<p:inputText id="nome" size="60"/>			
 			</p:panelGrid>
 			
-			<p:dataTable id="produtosTable" value="#{pesquisaPedidosBean.pedidosFiltrados}" var="produto"
+			<p:dataTable id="produtosTable" value="#{pesquisaProdutosBean.produtosFiltrados}" var="produto"
 				style="margin-top:20px" emptyMessage="Nenhum Produto encontrado." rows="20" paginator="true" 
 				paginatorAlwaysVisible="false" paginatorPosition="bottom">
 		
@@ -60,10 +60,17 @@
 			
 			<p:column style="width: 100px; text-align: center" >
 				<p:button icon="ui-icon-pencil" title="Editar" />
-				<p:commandButton icon="ui-icon-trash" title="Excluir"/>
-			</p:column>
+				<p:commandButton icon="ui-icon-trash" >
+			        <p:confirm header="Exclusão de Produto" message="Tem certeza que deseja excluir o produto" icon="ui-icon-alert" />
+			    </p:commandButton>
+			</p:column>					
+			</p:dataTable>
 			
-			</p:dataTable>			
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+		        <p:commandButton value="Sim" type="button"  styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+		        <p:commandButton value="Não" type="button"  styleClass="ui-confirmdialog-no" icon="ui-icon-closethick" />
+		    </p:confirmDialog>    
+						
 		</h:form>
 	</ui:define>	
 
