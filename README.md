@@ -1,1 +1,1 @@
-# Curso-alagaworks-javaEE-com-JSF-Primefaces-e-CDI
+# Curso-algaworks-javaEE-com-JSF-Primefaces-e-CDI
